@@ -93,7 +93,6 @@ marshmallow-enum==1.5.1
 marshmallow-oneofschema==3.0.1
 marshmallow-sqlalchemy==0.26.1
 mysql-connector-python==8.0.26
-mysqlclient==2.0.3
 networkx==2.6.3
 numpy==1.21.4
 openapi-schema-validator==0.2.3

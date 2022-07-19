@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-b7%_+b%!qyqd^uzgq7dwdyf4&2+zsbp@%s#n34bd5$)lbd^z!2
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    ".compute-1.amazonaws.com"
+    ".compute-1.amazonaws.com",
+    "127.0.0.1"
 ]
 
 
@@ -128,4 +129,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'website/static')]

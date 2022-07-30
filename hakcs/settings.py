@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'hakcs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hakcs',
+        'NAME': 'test_db',
         'USER': 'testuser',
         'PASSWORD': '1234',
         'HOST': 'localhost',

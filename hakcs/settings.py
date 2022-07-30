@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-b7%_+b%!qyqd^uzgq7dwdyf4&2+zsbp@%s#n34bd5$)lbd^z!2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    ".compute-1.amazonaws.com"
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,8 +76,12 @@ WSGI_APPLICATION = 'hakcs.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hakcs',
+        'USER': 'testuser',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 

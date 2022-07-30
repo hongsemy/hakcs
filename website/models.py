@@ -9,11 +9,12 @@ class CommonInfo(models.Model):
 
 
 class Mission(CommonInfo):
-    icon = models.CharField(max_length=30)
+    icon = models.CharField(max_length=100)
 
 
 class PastEvents(CommonInfo):
     time = models.CharField(max_length=60)
+    title = models.CharField(max_length=100)
 
 
 class Executive(models.Model):
@@ -27,5 +28,5 @@ class Executive(models.Model):
 
 
 class SectionTitle(CommonInfo):
-    section_name = models.CharField(max_length=20)
+    section_name = models.CharField(max_length=100)
     title = models.CharField(max_length=50)
